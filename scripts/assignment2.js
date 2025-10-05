@@ -1,7 +1,7 @@
-function convertTemperature(celsius){
-    let f = ((celsius * 9/5) + 32);
-    let c = Number(prompt("Enter the temperature in Celsius"))
+function convertTemperature(){
+    let celsius = Number(prompt("Enter the temperature in Celsius"));
+    let fahrenheit = (celsius * 9/5) + 32;
     
-    document.getElementById("results").innerHTML=`<p>${f}<p>`;
+    document.getElementById("results").innerHTML=`<p>${fahrenheit}<p>`;
 }   
    
