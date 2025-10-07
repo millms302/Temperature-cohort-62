@@ -71,8 +71,7 @@ function fillThermo(){
 // NEED FOR FINAL
 function generateTable(){
     let tbody = document.getElementById("temps");
-    
-    for(let c=01;c<=10;c++){
+        for(let c=01;c<=10;c++){
         let f = (c*(9/5)) + 32;
         tbody.innerHTML+=`
         <tr>

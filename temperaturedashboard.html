@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temperaturedashboard.css">
     <title>Temperature Dashboard</title>
 </head>
 <body>
-    <h1>Temperature Dashboard</h1>
-    <div id="convert"></div>
-    <button onclick="convertToCelsius()">Convert to Celsius</button>
-    <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+    <h1>Convert A Temperature</h1>
+
+        <div id="formula">
+            
+            <div id="q1">
+        
+                <button onclick="convertCelsius()">C° to F°</button>
+
+                <div id="r1"></div>
+            
+            </div>
+
+            <div id="q2">
+
+                <button onclick="convertFahrenheit()">F° to C°</button>
+
+                <div id="r2"></div>
+
+            </div>
+
+        </div>
+
+    <h2>Conversion Table</h2>
+        <div id="temptable"></div>
+        
+        <button onclick="generateTable()">Generate Table</button>
+
+        <table border="5">
+            <thead>
+                <th>Celsius</th>
+                <th>Fahrenheit</th>
+            </thead>
+            <tbody id="temptable"></tbody>
+
+    </table>
 
     <script src="./scripts/temperaturedashboard.js"></script>
     
